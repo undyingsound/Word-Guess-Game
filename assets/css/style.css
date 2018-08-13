@@ -1,0 +1,145 @@
+header{
+
+background-image: url(../imgs/logo2.jpeg);
+border: 2px solid black;
+margin:0 auto;
+width:580px;
+height:350px;
+
+
+}
+
+header:hover{
+background-image: url(../imgs/logo.jpg);
+border: 2px solid black;
+width:580px;
+height:350px;
+
+}
+
+header:hover .titleHead {
+    display:none;
+}
+
+.topHead{
+background-color:#0065b1;
+border-bottom:solid #f21f2b;
+
+}
+
+.titleHead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align:right;
+    bottom:0;
+    right:0;
+    margin: 200px 0 0 0;
+    padding:5px 10px;
+    
+}
+
+
+    
+body {
+    
+    background-color: #00acc9;
+    padding:0;
+    margin:0;
+
+}
+
+
+
+.container {
+
+    margin:30px 30px;
+
+
+}
+
+.scoreBox{
+    background-color:whitesmoke;
+    border:2px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    float:right;
+    padding:5px 0 0 0;
+    text-align:center;
+    text-decoration: underline;
+    height:150px;
+    width:200px;
+    
+}
+
+.inputDash{
+    background-color:whitesmoke;
+    border:3px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    margin:0 auto;
+    text-align:center;
+    height:150px;
+    width:50%;
+    
+
+
+
+}
+.rightGuess{
+    background-color:whitesmoke;
+    border:2px solid black;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin:10px 0;
+    padding:5px 0;
+    text-align:center;
+    height:150px;
+    width:20%;
+    
+
+
+
+}
+.wrongGuess{
+    background-color:whitesmoke;
+    border:2px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin:10px 0;
+    padding:5px 0;
+    text-align:center;
+    text-decoration: underline;
+    height:150px;
+    width:20%;
+    
+}
+
+
+
+footer{
+    background-color:#fecf38;
+    border-top:1px solid black;
+    bottom:0;
+    color:#f21f2b;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    height:25px;
+    margin:0 auto;
+    padding-top:10px;
+    text-align:center;
+    position:fixed;
+    width:100%;
+
+
+
+
+}
+
+
+
+
+
+
+
