@@ -1,7 +1,9 @@
 header{
 
 background-image: url(../imgs/logo2.jpeg);
-border: 2px solid black;
+border: 2px solid #fecf38;
+border-top:3px solid whitesmoke;
+border-bottom: 3px solid whitesmoke;
 margin:0 auto;
 width:580px;
 height:350px;
@@ -11,7 +13,8 @@ height:350px;
 
 header:hover{
 background-image: url(../imgs/logo.jpg);
-border: 2px solid black;
+border-bottom: 3px solid black;
+border-top: 3px solid black;
 width:580px;
 height:350px;
 
@@ -22,8 +25,9 @@ header:hover .titleHead {
 }
 
 .topHead{
-background-color:#0065b1;
-border-bottom:solid #f21f2b;
+background-color:#fecf38;
+border-bottom:2px solid #0065b1;
+
 
 }
 
@@ -42,7 +46,7 @@ border-bottom:solid #f21f2b;
     
 body {
     
-    background-color: #00acc9;
+    background-color: #0065b1;
     padding:0;
     margin:0;
 
@@ -51,34 +55,52 @@ body {
 
 
 .container {
+    background-color: #00acc9;
+    margin:30px 0px;
+}
 
-    margin:30px 30px;
+.container .elaine{
+border:3px solid white;
+float:right;
+margin:0px 120px 0px 0px ;
+
+
 
 
 }
 
+.grid-container{
+    background-color: #00acc9;
+    box-sizing:border-box;
+    width:100%;
+    max-width:100%;
+    max-height: 100%;
+    padding:0px 20px;
+    
+}
+
+
 .scoreBox{
-    background-color:whitesmoke;
-    border:2px solid black;
+    background-color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    float:right;
-    padding:5px 0 0 0;
+    float:left;
+    margin:0px 0px 5px 120px;
+    padding:20px 0px -5px 0;
     text-align:center;
-    text-decoration: underline;
-    height:150px;
+    height:300px;
     width:200px;
     
 }
 
 .inputDash{
     background-color:whitesmoke;
-    border:3px solid black;
+   
     font-family:Arial, Helvetica, sans-serif;
     font-size: 100px;
     margin:0 auto;
     text-align:center;
-    height:150px;
+    height:300px;
     width:50%;
     
 
@@ -87,14 +109,14 @@ body {
 }
 .rightGuess{
     background-color:whitesmoke;
-    border:2px solid black;
-    text-decoration: underline;
+    
+    float:right;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin:10px 0;
+    font-size: 16px;
+    margin:0 25% 0 0;
     padding:5px 0;
     text-align:center;
-    height:150px;
+    height:100px;
     width:20%;
     
 
@@ -103,23 +125,22 @@ body {
 }
 .wrongGuess{
     background-color:whitesmoke;
-    border:2px solid black;
+   
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin:10px 0;
+    font-size: 16px;
+    margin:0 0 0 25%;
     padding:5px 0;
     text-align:center;
-    text-decoration: underline;
-    height:150px;
+    height:100px;
     width:20%;
     
 }
 
 
 
-footer{
+footer {
     background-color:#fecf38;
-    border-top:1px solid black;
+    border-top: 3px solid #00acc9;
     bottom:0;
     color:#f21f2b;
     font-family:Arial, Helvetica, sans-serif;
@@ -127,15 +148,22 @@ footer{
     font-weight:bold;
     height:25px;
     margin:0 auto;
-    padding-top:10px;
+    padding:5px 0 5px 0 ;
     text-align:center;
     position:fixed;
     width:100%;
 
+}
 
-
+.footerWord
+{
+   background-color: #fecf38;
+   padding:5px 0px;
+   
+   
 
 }
+
 
 
 
