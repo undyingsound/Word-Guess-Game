@@ -1,6 +1,6 @@
 
 //Word Bank
-const bank = ['Puffy Shirt','Bubble Boy','Shiksappeal','Sponge Worthy','Yada Yada','Serenity Now','Festivus','Regift','Mimbo','Shrinkage','Shmoopie','Double Dip','Big Salad','Sideler','Close Talker']
+const bank = ['Kramer','Newman','Soup Nazi','Festivus','Regift','Shrinkage','Baldist', 'T-Bone']
 
 //Random Choose
 let randomWord = Math.floor(Math.random() * bank.length);
@@ -8,11 +8,11 @@ let chooseWord = bank[randomWord];
 let underScore = [];
 let rightWord=[];
 let wrongWord=[];
-
+let scoreCount=0;
 //dom variable
 let domUnderScore = document.getElementsByClassName('inputDash');
 let domUsed = document.getElementsByClassName('rightGuess');
-
+let domScoreCounter = document.getElementsByClassName('scoreBox');
 
 
 console.log(chooseWord);
@@ -41,7 +41,10 @@ document.addEventListener('keypress', (event) => {
        
        
        if (underScore.join('') == chooseWord) {
-           alert('Well, Well, Well. Looks like you know your stuff...');
+           scoreCount++;
+           domScoreCounter[0].innerHTML = ('Score = '+ scoreCount);
+         alert('Well, Well, Well. Looks like you know your stuff...');
+           
        }
 
     }

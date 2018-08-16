@@ -89,6 +89,7 @@ margin:0px 120px 0px 0px ;
 
 .scoreBox{
     background-color:whitesmoke;
+    color:black;
     border-left:3px groove #0065b1;
     border-right:3px groove #0065b1;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
