@@ -11,7 +11,7 @@ let wrongWord=[];
 
 //dom variable
 let domUnderScore = document.getElementsByClassName('inputDash');
-
+let domUsed = document.getElementsByClassName('rightGuess');
 
 
 
@@ -20,12 +20,11 @@ console.log(chooseWord);
 let createUnderscore = () => {
     for(let i = 0; i < chooseWord.length; i++) {
         underScore.push('_');
-        
     }
     return underScore;
 }
-
 console.log(createUnderscore());
+
 
 //player choice
 document.addEventListener('keypress', (event) => {
@@ -35,22 +34,24 @@ document.addEventListener('keypress', (event) => {
 
     if (chooseWord.indexOf(keyConvert) > -1) {
        rightWord.push(keyConvert);
+
        underScore[chooseWord.indexOf(keyConvert)] = keyConvert;
        domUnderScore[0].innerHTML = underScore.join(' ');
+       console.log(keyConvert);
        
        
-       if (underScore.join(' ') == chooseWord) {
+       if (underScore.join('') == chooseWord) {
            alert('Well, Well, Well. Looks like you know your stuff...');
        }
 
     }
     else { 
         
-        wrongWrong.push(keyConvert);
-         
-       
-           
-    }
+        wrongWord.push(keyConvert);
+        domUsed[0].innerHTML = wrongWord;
+       }
+    
 });
 
-underScore[0].innerHTML = createUnderscore().join('_');
+
+
